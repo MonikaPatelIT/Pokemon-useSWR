@@ -1,13 +1,52 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+.Card--pokemon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 200px;
+  /* height: 200px; */
+  margin-top: 10px;
+  /* padding: 5px 5px 10px; */
+  text-align: center;
+  border: 1px solid tomato;
+  border-radius: 3px;
+}
+.Card--id {
+  align-self: flex-start;
+  background: tomato;
+  width: 25px;
+  padding: 3px;
+  margin: 0;
+  border-radius: 0 0 7px;
+}
+.Card--image {
+  align-self: stretch;
+  justify-self: center;
+}
+
+.Card--details{
+font-size: 1.5em;
+padding-bottom: .85em;
 }
